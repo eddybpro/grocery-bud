@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #c1f;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container{
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: 5px 4px 25px #01a026;
+}
+
+.container .alert{
+    visibility: hidden;
+}
+
+.container .success{
+    visibility: visible;
+    background-color: rgb(141, 242, 173);
+    color: rgb(96, 95, 95);
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: .2rem;
+}
+
+.container .danger{
+    visibility: visible;
+    background-color: rgb(248, 153, 150);
+    color: rgb(96, 95, 95);
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: .2rem;
+}
+
+.container .title{
+    padding: 1.5rem 0.5rem 1rem;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    text-align: center;
+    color: #c30471;
+}
+
+.container .grocery-form .grocery{
+    background-color: rgb(213, 213, 250);
+    border: none;
+    font-size: 1.2rem;
+    padding: .5rem .8rem;
+    border-radius: .5rem;
+    max-width: 450px;
+    outline: none;
+}
+
+.container .grocery-form .grocery::placeholder{
+    color: #5a5a5a;
+}
+
+.container .grocery-form .submit-btn{
+    background-color:rgb(123, 123, 248) ;
+    border: none;
+    padding: .5rem .8rem;
+    font-size: 1.2rem;
+    border-bottom-right-radius: .5rem;
+    border-top-right-radius: .5rem;
+    transform: translateX(-15px);
+    text-transform: capitalize;
+    cursor: pointer;
+    max-width: 450px;
+}
+
+.container .grocery-form .submit-btn:hover{
+    background-color: rgb(36, 1, 140);
+    color: #fff;
+    
+}
+
+.container .list{
+    margin-top: 1rem;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.container .list li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .list li div{
+    padding: .2rem 0.5rem;
+}
+
+.container .list li div .edit{
+    color: #11f;
+    padding-right: .5rem;
+    cursor: pointer;
+}
+
+.container .list li div .remove{
+    color: red;
+    margin-right: .5rem;
+    cursor: pointer;
+}
+
+.container .result-container{
+    visibility: hidden;
+    text-align: center;
+}
+
+.container .show-container{
+    visibility: visible;
+}
+
+.container .clear-btn{
+    display: block;
+    margin: 1rem auto;
+    margin-bottom: 0;
+    background-color: transparent;
+    color: red;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    padding-top: .5rem;
+    cursor: pointer;
+}
+
+/* ---------Media queries */
+
+@media screen and (max-width:768px) {
+    .container{
+        width: 100%;
+    }
+
+    .container .grocery-form .grocery{
+        display: block;
+        width: 100%;
+        margin: auto;
+        margin-bottom: .5rem;
+    }
+
+    .container .grocery-form .submit-btn{
+        display: block;
+        width: 100%;
+        transform: unset;
+        margin: auto;
+        border-radius: .5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
